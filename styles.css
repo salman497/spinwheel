@@ -40,3 +40,43 @@ h1 {
 .mdc-button {
   --mdc-theme-primary: #3f51b5;
 }
+
+/* Avatar center display */
+.avatar-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid #3f51b5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+}
+
+#avatar-center i {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+#avatar-name {
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+/* Enhanced Arrow */
+.arrow {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 40px solid #3f51b5;
+}
